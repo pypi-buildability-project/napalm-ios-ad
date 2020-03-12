@@ -12,7 +12,7 @@ It will neither change function arguments or return values nor implement new fun
 
 ## Authors:
 
-The largest part of the codebase is sync'd from and belongs to the [NAPALM Project](https://github.com/napalm-automation/napalm/).
+The largest part of the codebase is sync'd from and belongs to the [NAPALM Project](https://github.com/napalm-automation/napalm/).<br>
 Privilege Patches are done by me.
 
 Privilege Patches
