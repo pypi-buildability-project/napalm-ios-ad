@@ -7,11 +7,12 @@ This limits it's use for certain purposes where priv exec is not required. (like
 
 This driver is a fork of the original driver, it changes the behavior of the driver and implements privilege level checking.
 It will allow to connect without privilege level 15 and instead raise permission-errors<br>
-if a function is called and the necessary privileges are not available. 
+if a function is called and the necessary privileges are not available. <br>
+It will neither change function arguments or return values nor implement new functions.
 
 ## Authors:
 
-While the privilege patches are maintained by me the rest of the codebase is still originated and sync'd from the [NAPALM Project](https://github.com/napalm-automation/napalm/).
+While the privilege patches are maintained by me the rest(the largest part) of the codebase  is sync'd from and belongs to the [NAPALM Project](https://github.com/napalm-automation/napalm/).
 
 Privilege Patches
   * Daniel Schlifka <remingu@techturn.de>
