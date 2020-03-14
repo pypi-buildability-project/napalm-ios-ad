@@ -14,13 +14,14 @@ It will neither change function arguments or return values nor implement new fun
 The largest part of the codebase is sync'd from and belongs to the [NAPALM Project](https://github.com/napalm-automation/napalm/).<br>
 Privilege Patches are done by me.
 
-Privilege Patches
-  * remingu <remingu@techturn.de>
 
 Original Authors(NAPALM Project)
  * David Barroso ([dbarrosop@dravetech.com](mailto:dbarrosop@dravetech.com))
  * Elisa Jasinska ([elisa@bigwaveit.org](mailto:elisa@bigwaveit.org))
  * Many others, check the [napalm contributors](https://github.com/napalm-automation/napalm/graphs/contributors) page for details.
+
+Privilege Patches
+  * remingu <remingu@techturn.de>
 
 ## install
  
