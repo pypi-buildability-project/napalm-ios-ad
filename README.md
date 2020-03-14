@@ -1,6 +1,6 @@
 ## alternative unofficial napalm ios driver
 
-Due the purpose of NAPALM the included IOS Drivers are designed to require Privilege Exec Mode(aka Privilege Level 15)<br>
+Due the purpose of NAPALM the included IOS Drivers are designed to require Privilege Exec Mode(aka Privilege Level 15) 
 to ensure the full feature-set is always available.<br>
 If this privilege level is not available the driver will not work.<br>
 This limits it's use for certain purposes where priv exec is not required. (like using the getters() or sending show commands)
