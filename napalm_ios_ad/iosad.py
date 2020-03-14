@@ -26,7 +26,7 @@ from collections import defaultdict
 
 from netaddr import IPNetwork
 from netaddr.core import AddrFormatError
-from netmiko import FileTransfer, InLineTransfer
+from netmiko import FileTransfer, InLineTransfer, ConnectHandler, NetMikoTimeoutException
 
 import napalm.base.constants as C
 import napalm.base.helpers
@@ -3242,7 +3242,7 @@ class IOSAlternativeDrv(NetworkDriver):
                 command += " source {}".format(kwargs['source'])
             if 'ttl' in kwargs:
                 if isinstance(kwargs['ttl'], int) and 0 <= kwargs['ttl'] <= 255:
-                    command += " ttl 0 {}".format(str(kwargs['ttl']))
+                    command += " ttl {}".format(str(kwargs['ttl']))
                     ttl = kwargs['ttl']
             if 'timeout' in kwargs:
                 # Timeout should be an integer between 1 and 3600

@@ -8,7 +8,7 @@ This limits it's use for certain purposes where priv exec is not required. (like
 This driver is a fork of the original driver, it changes the behavior of the driver and implements privilege level checking.
 It will allow to connect without privilege level 15 and instead raise permission-errors<br>
 if a function is called and the necessary privileges are not available. <br>
-It will neither change function arguments or return values nor implement new functions.
+It will neither change function arguments or return values nor implement new functions. 
 
 ## Authors:
 
@@ -22,4 +22,35 @@ Original Authors(NAPALM Project)
  * David Barroso ([dbarrosop@dravetech.com](mailto:dbarrosop@dravetech.com))
  * Elisa Jasinska ([elisa@bigwaveit.org](mailto:elisa@bigwaveit.org))
  * Many others, check the [napalm contributors](https://github.com/napalm-automation/napalm/graphs/contributors) page for details.
+
+## install
+ 
+    pip install napalm-ios-alternative-drv
+    
+## usage 
+
+   without secret: 
+    
+    #!/usr/bin/env python3
+    from napalm import get_network_driver
+    driver = get_network_driver('ios_ad')      
+    device = driver('1.1.1.1', 'username', 'password')
+    device.open()    
+    vals = device.get_facts()   
+    print(vals)    
+    device.close()
+
+   with secret: 
+    
+    #!/usr/bin/env python3
+    from napalm import get_network_driver
+    optional_args = { 'secret': '<enable_secret>'}
+    driver = get_network_driver('ios_ad')      
+    device = driver('1.1.1.1', 'username', 'password', optional_args=optional_args)
+    device.open()    
+    vals = device.get_facts()   
+    print(vals)    
+    device.close()
+    
+
 
