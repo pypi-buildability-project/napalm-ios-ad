@@ -19,7 +19,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
-    py_modules=['gaiaos'],
+    py_modules=['ios_ad'],
     url='https://github.com/remingu/napalm-ios-ad',
     license='Apache 2.0',
     author='Daniel Schlifka(remingu)',
