@@ -15,7 +15,7 @@ The largest part of the codebase is sync'd from and belongs to the [NAPALM Proje
 Privilege Patches are done by me.
 
 Privilege Patches
-  * Daniel Schlifka <remingu@techturn.de>
+  * remingu <remingu@techturn.de>
 
 Original Authors(NAPALM Project)
  * David Barroso ([dbarrosop@dravetech.com](mailto:dbarrosop@dravetech.com))
