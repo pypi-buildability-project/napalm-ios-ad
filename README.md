@@ -9,19 +9,6 @@ This driver is a fork of the original driver, it changes the behavior of the dri
 It will allow to connect without privilege level 15 and instead raise permission-errors whenever a function is called and the required privilege level is not available. <br>
 It will neither change function arguments or return values nor implement new functions. 
 
-## Authors:
-
-The largest part of the codebase is sync'd from and belongs to the [NAPALM Project](https://github.com/napalm-automation/napalm/).<br>
-Privilege Patches are done by me.
-
-
-Original Authors(NAPALM Project)
- * David Barroso ([dbarrosop@dravetech.com](mailto:dbarrosop@dravetech.com))
- * Elisa Jasinska ([elisa@bigwaveit.org](mailto:elisa@bigwaveit.org))
- * Many others, check the [napalm contributors](https://github.com/napalm-automation/napalm/graphs/contributors) page for details.
-
-Privilege Patches
-  * remingu <remingu@techturn.de>
 
 ## install
  
@@ -53,4 +40,17 @@ Privilege Patches
     device.close()
     
 
+## Authors:
+
+The largest part of the codebase is sync'd from and belongs to the [NAPALM Project](https://github.com/napalm-automation/napalm/).<br>
+Privilege Patches are done by me.
+
+
+Original Authors(NAPALM Project)
+ * David Barroso ([dbarrosop@dravetech.com](mailto:dbarrosop@dravetech.com))
+ * Elisa Jasinska ([elisa@bigwaveit.org](mailto:elisa@bigwaveit.org))
+ * Many others, check the [napalm contributors](https://github.com/napalm-automation/napalm/graphs/contributors) page for details.
+
+Privilege Patches
+  * remingu <remingu@techturn.de>
 
