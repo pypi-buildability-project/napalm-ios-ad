@@ -3,7 +3,7 @@
 Due the purpose of NAPALM the included IOS Drivers are designed to require Privilege Exec Mode(aka Privilege Level 15) 
 to ensure the full feature-set is always available.<br>
 If this privilege level is not available the driver will not work.<br>
-This limits it's use for certain purposes where priv exec is not required. (like using the getters() or sending show commands)
+This limits its use for certain purposes where priv exec is not required. (like using the getters() or sending show commands)
 
 This driver is a fork of the original driver, it changes the behavior of the driver and implements privilege level checking.
 It will allow to connect without privilege level 15 and instead raise permission-errors whenever a function is called and the required privilege level is not available. <br>
