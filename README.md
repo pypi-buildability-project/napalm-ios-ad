@@ -57,5 +57,5 @@ Original Authors(NAPALM Project)
  * Many others, check the [napalm contributors](https://github.com/napalm-automation/napalm/graphs/contributors) page for details.
 
 Privilege Patches
-  * remingu <remingu@techturn.de>
+  * Daniel Schlifka <remingu@techturn.de>
 
