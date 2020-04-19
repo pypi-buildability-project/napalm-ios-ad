@@ -1,5 +1,7 @@
 """NAPALM Cisco IOS Alternative Handler."""
 # Copyright 2015 Spotify AB. All rights reserved.
+# Privilege Patches: Copyright 2020 Daniel Schlifka 
+#
 #
 # The contents of this file are licensed under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with the
