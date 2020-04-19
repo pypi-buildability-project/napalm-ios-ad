@@ -41,7 +41,7 @@ It will neither change function arguments or return values nor implement new fun
 
 ## Bug Reports:
 
-Please note that the napalm authors do not take care for this driver.
+Please note that the napalm authors do not take care for this driver, please don't bother them.
 Be so kind and open an Issue here or write me an E-Mail. 
 
 
