@@ -38,7 +38,12 @@ It will neither change function arguments or return values nor implement new fun
     vals = device.get_facts()   
     print(vals)    
     device.close()
-    
+
+## Bug Reports:
+
+Please note that the napalm authors do not take care for this driver.
+Be so kind and open an Issue here or write me an E-Mail. 
+
 
 ## Authors:
 
