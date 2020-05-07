@@ -1,11 +1,32 @@
 ## news 
 
 2020-05-07
-Napalm 3.0 was released, i'm working on adopting the changes.
+
+Napalm 3.0 was released, the updated ios driver comes with an option to disable enable mode.
+Therefore this driver is no longer needed and you should use the builtin NAPALM IOS-Driver instead.
+Many thanks to the napalm team.(saves so much time)
+
+You can suppress the enable_mode now by adding the parameter "force_no_enable:True" to optional_args as shown below.
+
+connection without priv-exec using the standard napalm ios-driver: 
+    
+    #!/usr/bin/env python3
+    from napalm import get_network_driver
+    optional_args = { 
+                      'secret': '<enable_secret>',
+                      'force_no_enable': True
+    }
+    driver = get_network_driver('ios_ad')      
+    device = driver('1.1.1.1', 'username', 'password', optional_args=optional_args)
+    device.open()    
+    vals = device.get_facts()   
+    print(vals)    
+    device.close()
 
 
 
-## alternative unofficial napalm ios driver
+
+## alternative unofficial napalm ios driver for NAPALM 2.5.0
 
 Due the purpose of NAPALM the included IOS Drivers are designed to require Privilege Exec Mode(aka Privilege Level 15) 
 to ensure the full feature-set is always available.<br>
