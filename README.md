@@ -12,10 +12,7 @@ connection without priv-exec using the standard napalm ios-driver:
     
     #!/usr/bin/env python3
     from napalm import get_network_driver
-    optional_args = { 
-                      'secret': '<enable_secret>',
-                      'force_no_enable': True
-    }
+    optional_args = { 'force_no_enable': True }                     
     driver = get_network_driver('ios')      
     device = driver('1.1.1.1', 'username', 'password', optional_args=optional_args)
     device.open()    
