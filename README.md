@@ -3,7 +3,7 @@
 2020-05-07
 
 Napalm 3.0 was released, the updated ios driver comes with an option to disable enable mode.
-Therefore this driver is no longer needed and you should use the builtin NAPALM IOS-Driver instead.
+Therefore this driver is no longer needed and you should use the builtin NAPALM IOS-Driver instead.<br>
 Many thanks to the napalm team.(saves so much time)
 
 You can suppress the enable_mode now by adding the parameter "force_no_enable:True" to optional_args as shown below.
