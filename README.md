@@ -1,3 +1,10 @@
+## news 
+
+2020-05-07
+Napalm 3.0 was released, i'm working on adopting the changes.
+
+
+
 ## alternative unofficial napalm ios driver
 
 Due the purpose of NAPALM the included IOS Drivers are designed to require Privilege Exec Mode(aka Privilege Level 15) 
