@@ -16,7 +16,7 @@ connection without priv-exec using the standard napalm ios-driver:
                       'secret': '<enable_secret>',
                       'force_no_enable': True
     }
-    driver = get_network_driver('ios_ad')      
+    driver = get_network_driver('ios')      
     device = driver('1.1.1.1', 'username', 'password', optional_args=optional_args)
     device.open()    
     vals = device.get_facts()   
@@ -24,6 +24,7 @@ connection without priv-exec using the standard napalm ios-driver:
     device.close()
 
 
+Sources will be kept available for people that rely for some reason on napalm 2.5.0.
 
 
 ## alternative unofficial napalm ios driver for NAPALM 2.5.0
@@ -39,7 +40,7 @@ It will neither change function arguments or return values nor implement new fun
 
 ## install
  
-    pip install napalm-ios-alternative-drv
+    pip install napalm25-ios-alternative-drv
     
 ## usage 
 
